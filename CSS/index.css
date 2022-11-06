@@ -1,0 +1,104 @@
+/*Imports*/
+@import url('https://fonts.cdnfonts.com/css/sf-pixelate');
+
+/*Window Resize Support*/
+@media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+     }
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url('Images/BG.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: 'SF Pixelate', sans-serif;
+    font-family: 'SF Pixelate Shaded', sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+h1{
+    font-size: 80px;
+}
+
+a:link{
+    color: black;
+    transition-duration: 250ms;
+    text-decoration: none;
+}
+
+a:visited{
+    color: rgb(49, 0, 81);
+}
+
+a:visited:hover{
+    color: black;
+}
+
+a:hover{
+    color: rgb(49, 0, 81);
+}
+
+a:active{
+    color: rgba(23, 3, 36, 0.333)
+}
+
+.MenuDisplay {
+    /*Starting Blur*/
+    animation: BlurAnim 1.5s;
+}
+
+@keyframes BlurAnim {
+    from {
+        filter: blur(3rem);
+    }
+
+    to{
+        filter: blur(0px);
+    }
+}
+
+::-moz-selection { /* Firefox */
+    color: #3e2279;
+    background: #da2280;
+}
+  
+::selection {
+    color: #3e2279;
+    background: #da2280;
+}
+
+hr{
+	background-color: #3e2279;
+	border-top: 2px dashed #da2280;
+    width: 1620px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #da2280;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(62,34,121);
+    background: linear-gradient(19deg, rgba(62,34,121,1) 0%, rgba(121,34,104,1) 100%);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(121,34,104);
+    background: linear-gradient(19deg, rgba(121,34,104,1) 0%, rgba(34,35,121,1) 100%);  
+  }

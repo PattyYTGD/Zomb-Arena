@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | ZA</title>
+
+    <!--CSS Linking-->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/NavBar.css">
+
+    <style>
+    
+    * {
+        box-sizing: border-box;
+    }
+
+    input, select, textarea {
+        background-color: #331168;
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #1e093f;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    button[type=submit] {
+        font-family: 'Inspiration' cursive;
+    background-color: #db2175;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    .container {
+    border-radius: 5px;
+    background-color: #321168dc;
+    width: 1605px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+    }
+
+    .btn{
+        border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: #ffffff0d;
+        overflow: hidden;
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        padding: 17px 50px;
+        font-size: 20px;
+        box-shadow: 0 5px 15px #00000033;
+        border-radius: 25px;
+        position: relative;
+            
+        }
+
+        .btn:hover{
+            color: #db2175;
+            border-style: solid;
+        }
+        
+        .btn samp{
+            position: relative;
+            z-index: 1;
+            transition-duration: 250ms;
+        }
+
+        .btn::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 490%;
+            width: 140%;
+            background: #331168;
+            -webkit-transition: all .5s ease-in-out;
+            transition: .5s;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    
+        }
+        .btn:hover::after{
+            -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+            transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    
+        }
+    </style>
+
+</head>
+<body style="background-image: url('Images/BG2.png'); background-repeat: no-repeat; background-attachment: fixed; background-size: 100% 100%;">
+
+    <ul id="myMenu" style="margin: 25px;">
+        <li><a id="Search" href="index.html">HOME PAGE &larr;</a></li>
+        <li><a id="Search" href="SM_ZombArena.html">SOCIAL MEDIA &#8594;</a></li>
+        <li><a id="Search" href="Install_ZombArena.html">INSTALL &#8595;</a></li>
+      </ul>
+
+    <div class="container">
+        <form action="https://formsubmit.co/el/garowa" method="post">
+          <label for="fname"><u>Username</u></label>
+          <input type="text" id="fname" name="firstname" placeholder="E. g. gamer_1246 (optional) &#128219;" title="optional form">
+
+          <label for="email"><u>*Email Address</u></label>
+          <input type="email" id="email" name="email" class="form-control" required value="" placeholder="example@site.com (&#128231;)" title="required form (*)">
+
+          <label for="subject"><u>Subject</u></label>
+          <input type="text" id="subject" name="subject" placeholder="Subject. E. g. weird bug in the game! &#128030;" title="optional form">
+      
+          <label for="message"><u>*Message</u></label>
+          <textarea id="message" name="message" placeholder="How shall the dev upgrade the game? (Any useless messages will be ingored or blocked! &#x26D4;)" required style="height:200px" title="required form (*)"></textarea>
+      
+          <button type="submit" class="btn"><samp>SEND MESSAGE! &#8811;</samp></button>
+        </form>
+      </div>
+
+      <div style="background-color: #1e093f; text-align: center; margin: auto; width: 550px; border-radius: 10px; color: rgb(192, 192, 192);">(Personal information will NOT be shared across. &#9940;)</div>
+</body>
+</html>
